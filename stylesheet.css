@@ -13,18 +13,16 @@ body {
     width: 100vw;
     margin: auto;
     -webkit-box-shadow:0px 0px 34px 10px #000000 inset;
--moz-box-shadow:0px 0px 34px 10px #000000 inset;
-box-shadow:0px 0px 34px 10px #000000 inset;
+    -moz-box-shadow:0px 0px 34px 10px #000000 inset;
+    box-shadow:0px 0px 34px 10px #000000 inset;
 }
-/* .topimg {
-    background-image: url("dankMeme.jpg");
-    background-size: cover;
-    min-height: 35rem;
-} */
+
 .topproject {
+    margin: 0;
+    padding: 0;
     background-color: white;
-    color: black;
-    text-align: center;
+    /* color: black; */
+    /* text-align: center; */
     border-left: 0.2rem solid black;
     border-right: 0.2rem solid black;
     border-bottom: 0.2rem solid black;
@@ -32,16 +30,6 @@ box-shadow:0px 0px 34px 10px #000000 inset;
     min-height: 35rem;
     background-size: cover;
     background-color: black;
-    /* filter: grayscale(100%); */
-    font-family: Verdana;
-    text-transform: uppercase;
-    font-style: italic;
-    letter-spacing: 0.5rem;
-    font-size: 20px;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    /* -webkit-box-shadow:0px 0px 50px 30px #ff0000 ;
--moz-box-shadow:0px 0px 50px 30px #ff0000 ;
-box-shadow:0px 0px 50px 30px #ff0000 ; */
 }
 
 nav {
@@ -91,27 +79,46 @@ li a:hover {
     font-weight: bold;
 }
 
-.slideDown{
+.slideDown {
   width:100%;
   overflow:hidden;
+  height: 200px;
 }
-.slideDown p {
-  animation: 5s slide-down;
-  margin-top:50%;
-  color: white;
+
+/* @import url('https://fonts.googleapis.com/css?family=Mr+Dafoe&display=swap'); */
+
+.slideDown .topText {
+  animation: 2s slide-down;
+  margin-top: 0%;
+  
+  position: absolute;
+  font-family: 'Mr Dafoe', cursive;
+  font-size: 90px;
+  color: #F975F7 ;
+  transform:rotate(-15deg);
+  -ms-transform:rotate(-15deg); /* IE 9 */
+  -webkit-transform:rotate(-15deg); /* Safari and Chrome */
+  -webkit-text-stroke: 1px #f008b7;
+  filter: drop-shadow(2px 2px 20px #f008b7);
+  -webkit-filter: drop-shadow(2px 2px 20px #f008b7);
+  padding-right: 20rem;
 }
 
 @keyframes slide-down {
   from {
-    margin-top: -100%;
+    margin-top: -30%;
     height: 300%; 
   }
 
   to {
-    margin-top: 50%;
-    height: 100%;
+    margin-top: 0;
+    padding-right: 20rem;
+    height: 9rem;
   }
 }
+.windows .dreams {
+    -webkit-text-stroke: 4px #f008b7;
+  }
   
 .maincontent {
     border: 0.2rem solid black;
@@ -146,12 +153,14 @@ h3 {
 }
 
 p {
+    padding: 0;
+    margin: 0;
     line-height: 1.6;
     padding-left: 2rem;
     padding-right: 2rem;
     padding-bottom: 3rem;
-    font-family: sans-serif;
-}
+    /* font-family: sans-serif; */
+ } 
 
 .pone {
     display: flex;
