@@ -62,9 +62,13 @@ li a {
     display: block;
     background-color: black;
     text-decoration: none;
-    color: white;
+    color: rgb(212, 38, 235);
     padding-top: 1rem;
     padding-bottom: 1rem;
+    font-family: 'Mr Dafoe';
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+    font-weight: bold;
 }
 
 li a:hover {
@@ -77,6 +81,7 @@ li a:hover {
     color: skyblue;
     font-family: Verdana;
     font-weight: bold;
+    font-family: 'cursive';
 }
 
 .slideDown {
@@ -133,6 +138,38 @@ li a:hover {
     
 }
 
+.musicP {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 8rem;
+    padding-top: 5rem;
+}
+
+.previous {
+    text-decoration: none;
+    color: rgb(184, 19, 184);
+    background: black;
+    transition: all 0.2s ease-in-out;
+}
+.previous:hover {
+    -webkit-box-shadow:0px 0px 10px 6px #b034b0 inset;
+    -moz-box-shadow:0px 0px 10px 6px #b034b0 inset;
+    box-shadow:0px 0px 10px 6px #b034b0 inset;
+}
+
+.next {
+    text-decoration: none;
+    color: rgb(184, 19, 184);
+    background: black;
+    transition: all 0.2s ease-in-out;
+}
+
+.next:hover {
+    -webkit-box-shadow:0px 0px 10px 6px #b034b0 inset;
+    -moz-box-shadow:0px 0px 10px 6px #b034b0 inset;
+    box-shadow:0px 0px 10px 6px #b034b0 inset;
+}
+
 .maincontent h1 {
     text-align: center;
     padding-top: 3rem;
@@ -167,6 +204,12 @@ p {
     flex-direction: column;
     justify-content: center;
     padding-bottom: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.lorem {
+    padding-left: 5rem;
 }
 
 .sandinfo {
@@ -176,6 +219,8 @@ p {
     font-weight: bold;
     font-style: italic;
     line-height: 1.6;
+    padding-bottom: 6rem;
+    padding-top: 1rem;
 }
 
 .sandy {
@@ -192,13 +237,13 @@ p {
 
 .contactus {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     font-weight: bold;
     text-align: center;
     padding-bottom: 3rem;
-    width: 50%;
-    padding-left: 3rem;
+    width: 100%;
+    /* padding-left: 3rem; */
 }
 
 .conphone {
@@ -209,15 +254,19 @@ p {
     margin-left: auto;
     margin-right: auto;
     float: none;
-    max-height: 7rem;
+    max-width: 20rem;
+    padding-bottom: 5rem;
 }
 
 .contactus p {
-    float: center;
+    /* float: center; */
     line-height: 1.6;
+    /* padding-right: 20rem; */
+    text-align: center;
+
 }
 
-footer {
+.foot {
     border-left: 0.2rem solid black;
     border-right: 0.2rem solid black;
     border-bottom: 0.2rem solid black;
@@ -226,7 +275,11 @@ footer {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background: radial-gradient(circle, rgb(135, 5, 168), black);
+    background: radial-gradient(circle, rgb(177, 8, 219), black);
+}
+
+.foot:hover {
+    background: radial-gradient(circle, rgb(198, 26, 241), black);
 }
 
 #sendtop {
@@ -238,7 +291,14 @@ footer {
     text-decoration: none;
     color: black;
     font-weight: bold;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+.deco:hover {
+    color: rgb(41, 15, 37)
+}
+
 
 
 @media only screen and (min-device-width: 1224px) {
